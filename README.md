@@ -1,7 +1,21 @@
 LeanKit-java-examples
 =====================
 
-Some LeanKit Java Examples
+
+**leankit.samples.boards**
+Sample class for listing all the boards that belong to a leankit account.
+
+Run this example by specifying <e-mail address> <password> <url to board>
+
+ 
+**leankit.samples.board**
+Sample class for retrieving all the cards and corresponding info from a specific board.
+
+Run this example by specifying <e-mail address> <password> <url to board> <board id>
+
+
+**Dependencies**
+The examples depend on the following jar files.
 
 - httpclient-4.3.5.jar
 - httpcore-4.3.2.jar
