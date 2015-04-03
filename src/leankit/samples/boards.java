@@ -71,10 +71,15 @@ public class boards {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		boards b = new boards("youruser@abc.xx", "yourpassword", "abc.leankit.com", "/kanban/api/boards", "" );
+		if(args.length != 3) {
+			System.out.println("Usage: [userid] [password] [URL e.g abc.leankit.com]");
+		} else {
+		System.out.println(args[0] +"-" + args[1] +"-" + args[2]);
+		boards b = new boards(args[0], args[1], args[2], "/kanban/api/boards", "" );
 		System.out.println("Reply code: " + b.getReplyCode());
 		System.out.println("Reply text: " + b.getReplyText());
 		b.printBoards();
+		}
 	}
 	
 }
